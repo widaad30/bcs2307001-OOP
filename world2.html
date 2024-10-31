@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Country Explorer</title>
+
+  <!-- Link to external CSS file for page styling -->
+  <link rel="stylesheet" href="index2.css" />
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Google Font Poppins for custom font style -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header section with main title and navigation links -->
+  <header class="main-header">
+    🌍 WORLD EXPLORER 🌍
+    <nav class="nav-links">
+      <!-- Navigation links for different pages of the website -->
+      <a href="index.html">🏠 HOMEPAGE</a>
+      <a href="crud.html" class="nav-link">📝 NOTES</a>
+      <a href="fav.html" class="nav-link">⭐ FAVORITES</a>
+    </nav>
+  </header>
+
+  <!-- Main content section -->
+  <div class="content">
+    <!-- Title for the main content area -->
+    <h1 class="page-title">Explore Country Details</h1>
+
+    <!-- Container for displaying the selected country’s details -->
+    <div id="country-info" class="info-card">
+      <div class="info-item"><i class="fas fa-flag"></i><span id="demo1">Country Name</span></div>
+      <div class="info-item"><i class="fas fa-city"></i><span id="demo2">Capital</span></div>
+      <div class="info-item"><i class="fas fa-users"></i><span id="demo3">Population</span></div>
+      <div class="info-item"><i class="fas fa-area-chart"></i><span id="area">Area</span></div>
+      <div class="info-item"><i class="fas fa-globe"></i><span id="continent">Continent</span></div>
+      <div class="info-item"><i class="fas fa-map"></i><span id="region">Region</span></div>
+      <div class="info-item"><i class="fas fa-compass"></i><span id="subregion">Subregion</span></div>
+      <div class="info-item"><i class="fas fa-language"></i><span id="languages">Languages</span></div>
+      <div class="info-item"><i class="fas fa-clock"></i><span id="timezones">Timezones</span></div>
+      <div class="info-item"><i class="fas fa-map-marker-alt"></i><span id="location">Location</span></div>
+    </div>
+
+    <!-- Image section for the country’s flag and coat of arms -->
+    <div class="image-container">
+      <div class="image-row">
+        <!-- Display country flag -->
+        <div class="image-item">
+          <h3 class="image-label">Flag</h3>
+          <img id="flag" alt="Flag" class="country-image">
+        </div>
+        <!-- Display country coat of arms if available -->
+        <div class="image-item">
+          <h3 class="image-label">Coat of Arms</h3>
+          <img id="coatOfArms" alt="Coat of Arms" class="country-image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Section for displaying nearby countries with links and flags -->
+    <div class="nearby-countries-container">
+      <h3 class="section-title">Nearby Countries</h3>
+      <div id="nearbyCountries" class="nearby-countries-list">
+        <!-- Links to nearby countries will be populated here -->
+      </div>
+    </div>
+
+    <!-- Button to explore the country on Google Maps -->
+    <a id="mapLink" href="#" target="_blank" class="explore-map-button">🌐 Explore on Google Maps</a>
+    <!-- Button to add the country to favorites -->
+    <button id="addToFavorite" class="explore-map-button">⭐ Add to Favorite</button>
+  </div>
+
+  <!-- Footer section with closing message -->
+  <footer>
+    <p>Start your journey and discover amazing destinations! 🌎</p>
+  </footer>
+
+  <!-- Link to JavaScript file for handling interactions and fetching country data -->
+  <script src="world2.js"></script>
+</body>
+</html>

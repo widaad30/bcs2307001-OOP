@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Favorite Countries</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="fav.css">
+</head>
+<body>
+  
+  <!-- Header with links -->
+  <header class="main-header">
+    🌍 WORLD EXPLORER 🌍
+    <nav class="header-links">
+      <a href="index.html" class="nav-link">🏠 HOMEPAGE</a>
+      <a href="fav.html" class="nav-link">⭐ FAVORITES</a>
+      <a href="crud.html" class="nav-link">📝 NOTES</a>
+    </nav>
+  </header>
+
+  <h2 class="flag-instructions">CLICK THE FLAG FOR MORE DETAILS</h2>
+  
+  <div class="content" id="favoritesList">
+    <!-- Flags and country list will be dynamically populated here by JavaScript -->
+  </div>
+
+  <!-- Detailed country information card -->
+  <div id="countryDetails" class="info-card" style="display: none;">
+    <h3 id="countryName"></h3>
+    <p id="capital"></p>
+    <p id="population"></p>
+    <p id="area"></p>
+    <p id="continent"></p>
+    <p id="region"></p>
+    <button onclick="closeDetails()" class="explore-map-button">❌ Close</button>
+  </div>
+
+  <footer>
+    <p>Start your journey and discover amazing destinations! 🌎</p>
+  </footer>
+
+  <script src="fav.js"></script>
+</body>
+</html>

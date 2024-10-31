@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta and title -->
+  <meta charset="UTF-8" />
+  <title>Country Explorer - DUNIAKU</title>
+
+  <!-- Google Fonts and External Stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+  
+  <!-- Header Section with Navigation Links -->
+  <header class="main-header">
+    🌍 WORLD EXPLORER 🌍
+    <nav class="header-links">
+      <a href="crud.html" class="nav-link">📝 NOTES</a>
+      <a href="fav.html" class="nav-link">⭐ FAVORITES</a>
+    </nav>
+  </header>
+
+  <!-- Main Image with Overlayed Text and Input Field -->
+  <div class="main-image">
+    <img src="worldmap2.jpg" alt="World Map" class="main-pic">
+    <div class="overlay-text">
+      <h1>💖 Hello Dreamers!</h1>
+      <!-- Input for country name -->
+      <label for="world">Enter a country name:</label>
+      <input type="text" id="world" name="world" placeholder="e.g., Japan">
+      <button onclick="buttonClicked()">EXPLORE</button>
+    </div>
+  </div>
+
+  <!-- Continents Section -->
+  <h2>CONTINENTS OF THE WORLD</h2>
+  <div class="continents-section">
+    <!-- Cards for each continent that trigger the `showCountries` function when clicked -->
+    <div class="continent-card" onclick="showCountries('Africa')">
+      <img src="africa.jpg" alt="Africa">
+      <p>Africa</p>
+    </div>
+    <div class="continent-card" onclick="showCountries('Asia')">
+      <img src="asia.jpg" alt="Asia">
+      <p>Asia</p>
+    </div>
+    <div class="continent-card" onclick="showCountries('Europe')">
+      <img src="europe.jpg" alt="Europe">
+      <p>Europe</p>
+    </div>
+    <div class="continent-card" onclick="showCountries('North America')">
+      <img src="america.jpg" alt="North America">
+      <p>North America</p>
+    </div>
+    <div class="continent-card" onclick="showCountries('South America')">
+      <img src="southamerica2.jpg" alt="South America">
+      <p>South America</p>
+    </div>
+    <div class="continent-card" onclick="showCountries('Oceania')">
+      <img src="ocenia.jpg" alt="Oceania">
+      <p>Oceania</p>
+    </div>
+  </div>
+
+  <!-- Flags Section for displaying countries of a selected continent -->
+  <h2 id="flags-header" style="display: none;">Flags of Countries in <span id="continent-name"></span></h2>
+  <div class="flags-section" id="flags-section" style="display: none;">
+    <!-- Country flags will be dynamically added here by JavaScript -->
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Start your journey and discover amazing destinations! 🌎</p>
+  </footer>
+
+  <!-- Link to External JavaScript File -->
+  <script src="world.js"></script>
+</body>
+</html>

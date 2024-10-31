@@ -1,0 +1,189 @@
+    /* General styles */
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-image: url('wallpaper2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: #333;
+    }
+
+/* Header */
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    background: linear-gradient(90deg, #004035, #055a6f);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+}
+
+/* Navigation Links */
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.4rem 0.7rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+    
+
+    /* Content container */
+    .content {
+        padding: 3rem 2rem;
+        background-color: rgba(237, 255, 255, 0.8);
+        border-radius: 20px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        margin: 2rem 1rem;
+    }
+
+    .page-title {
+        font-size: 3rem;
+        color: #004d40;
+        margin-bottom: 1.5rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        font-weight: 700;
+    }
+
+    /* Info card styling */
+    .info-card {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        margin: 1.5rem 0;
+    }
+
+    .info-item {
+        background-color: #ffffff;
+        padding: 1.8rem;
+        border-radius: 15px;
+        width: 180px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .info-item i {
+        font-size: 1.5rem;
+        color: #004d40;
+    }
+
+    .info-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Country images section */
+    .image-container {
+        margin: 3rem 0;
+    }
+
+    .image-row {
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-item {
+        text-align: center;
+    }
+
+    .image-label {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #004d40;
+        margin-bottom: 0.5rem;
+    }
+
+    .country-image {
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+
+    .country-image:hover {
+        transform: scale(1.05);
+    }
+
+    /* Nearby countries */
+    .nearby-countries-container {
+        margin: 2rem 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        color: #004d40;
+        margin-bottom: 1rem;
+    }
+
+    .neighbor-country-link {
+        font-size: 1rem;
+        color: #004d40;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .neighbor-country-link:hover {
+        text-decoration: underline;
+    }
+
+    .neighbor-country-flag {
+        width: 30px;
+        height: auto;
+        vertical-align: middle;
+    }
+
+    /* Button styles */
+    .explore-map-button {
+        padding: 0.9rem 2.8rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #00796b;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+        display: inline-block;
+        margin-top: 1.5rem;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .explore-map-button:hover {
+        background-color: #004d40;
+        transform: translateY(-3px);
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+        font-size: 1.2rem;
+        color: #e0fafb;
+        background: linear-gradient(90deg, #00796b, #004d40);
+        border-top: 3px solid #00796b;
+        margin-top: 3rem;
+    }
